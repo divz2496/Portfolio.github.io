@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* navbar */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+
+/* skill */
+.text {
+        text-align: center;
+        width: 100%;
+        height: 10%;
+        margin-top: 8%;
+        margin-bottom: 8%;
+    }
+    
+    .b {
+	background: #333;
+        border: 4px solid #3498db;
+        border-radius: 8px;
+        padding: 1% 1%;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-family: "Sofia", sans-serif;
+        cursor: pointer;
+        margin: 1%;
+	color: white;
+        
+    }
+    
+    .b1,
+    .b3,
+    .b5,
+    .b7 {
+        animation-name: box;
+        animation-delay: 1s;
+        animation-duration: 5s;
+    }
+   
+    
+    @keyframes box {
+        0% {
+            transform: translate(0, 0);
+        }
+        50% {
+            transform: translate(0, 25%);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+    
+    .b2,
+    .b4,
+    .b6,
+    .b8 {
+        animation-name: box1;
+        animation-delay: 1s;
+        animation-duration: 5s;
+    }
+   
+    
+    @keyframes box1 {
+        0% {
+            transform: translate(0, 0);
+        }
+        50% {
+            transform: translate(0, -25%);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+
+
+/* project */
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+
+background-image: url('C:/Users/Divz/Desktop/Portfolio/references/images.jpeg');
+
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* certificates */
+.certificate {
+        text-align: center;
+        width: 100%;
+        height: 10%;
+        margin-top: 8%;
+        margin-bottom: 8%;
+    }
+    
+    .bt {
+        border: 4px solid #3498db;
+        border-radius: 8px;
+        background: #333;
+        padding: 1% 1%;
+        font-size: 20px;
+        font-family: "Sofia", sans-serif;
+        cursor: pointer;
+        margin: 1%;
+        color: white;
+        
+    }
+    
+    .bt1,
+    .bt3
+    
+     {
+        animation-name: box;
+        animation-delay: 1s;
+        animation-duration: 5s;
+    }
+   
+    
+    @keyframes box {
+        0% {
+            transform: translate(0, 0);
+        }
+        50% {
+            transform: translate(0, 25%);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+    
+    .bt2,
+    .bt4,
+    .bt5
+    {
+        animation-name: box1;
+        animation-delay: 1s;
+        animation-duration: 5s;
+    }
+    
+    
+    @keyframes box1 {
+        0% {
+            transform: translate(0, 0);
+        }
+        50% {
+            transform: translate(0, -25%);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+
+
+.footer {
+   
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #333;
+   color: white;
+   text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about">
+  <h1> Divya Punwantwar</h1>
+  <p>I'm a Software Engineer</p>
+  
+</div>
+
+<!-- Navbar -->
+
+
+<ul>
+  <li><a href="C:\Users\Divz\Desktop\Portfolio\index.html">Home</a></li>
+  <li><a href="C:\Users\Divz\Desktop\Portfolio\resume.html">Resume</a></li>
+  <li><a href="C:\Users\Divz\Desktop\Portfolio\contact.html">Contact</a></li>
+  
+</ul>
+
+
+<!-- skills -->
+
+        <h1 style="text-align:center">TECHNICAL SKILLS</h1>
+        <div class="text">
+          
+                <button class="b b1">C/C++</button>
+                <button class="b b2">Java</button>
+                <button class="b b3">Python</button>
+                <button class="b b4">MySQL</button>
+
+
+                <button class="b b5">HTML</button>
+                <button class="b b6">CSS</button>
+                <button class="b b7">Javascript</button>
+                <button class="b b8">Android</button>
+            
+        </div>
+   
+
+
+
+
+
+<!-- Project -->
+
+<h1 style="text-align:center">PROJECTS</h1>
+<div class="row">
+
+  <div class="column">
+    <div class="card">
+      <img src="C:/Users/Divz/Desktop/Portfolio/references/p1.jpg"  style="width:100%">
+      <div class="container">
+        
+        <p>This designed website will help the users for effective utilization of
+time between two transportation facilities considering the time
+constraint. This website will also provide the necessary directions
+for the travelers. The basic requirement to avail these features is just
+completing the registering process and then logging in into the
+account as per necessity.</p>
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="C:/Users/Divz/Desktop/Portfolio/references/p3.jpg"  style="width:100%">
+      <div class="container">
+       
+        <p>For easier understanding of users, classifying the dataset of BBC
+news. Classifying manually the data into the different category is
+easy only when the dataset is very short but it is very clumsy or
+tricky to classify a large number of data set manually so for that use
+algorithms for classification of short text. This is proposed to
+classify the BBC news which is having multiclass and multi labels..</p>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="C:/Users/Divz/Desktop/Portfolio/references/p2.jpg"  style="width:100%">
+      <div class="container">
+        
+        <p>Validation of each and every step of order manually is tedious and
+time consuming. For validation of each order has TAT (Turn
+Around Time) of 2 days and to achieve TAT more man power is
+must needed. To overcome this, design an Automation tool which
+is automatically validates the order.</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- certificates -->
+
+        <h1 style="text-align:center">CERTIFICATES</h1>
+        <div class="certificate">
+          
+             <button class="bt bt1"  >Crash Course on Python by Google <br> <p  style="font-size:50%;">Online via Coursera</p></button>
+                <button class="bt bt2" >Responsive Web Design <br> <p  style="font-size:50%;">Online via Free Code Camp</p></button>
+                <button class="bt bt3" >Java training <br>  <p  style="font-size:50%;">Offered by the Spoken Tutorial Project, IIT Bombay</p></button>
+                <button class="bt bt4" >JavaScript Algorithms and Data Structures <br> <p style="font-size:50%;">Online via Free Code Camp</p></button>
+                <button class="bt bt5" >SAS Programming by SAS <br> <p  style="font-size:50%;">Online via Coursera</p></button>
+                
+        </div>
+   
+
+<div class="footer">
+  <p>Hire Me</p>
+<p>Contact:8208123992</p>
+<p>Gmail:divyapunwantwar@gmail.com</p>
+
+
+</div>
+
+</body>
+</html>
